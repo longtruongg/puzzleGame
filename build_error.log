@@ -1,0 +1,516 @@
+# main
+/usr/local/go/pkg/tool/linux_amd64/link: running gcc failed: exit status 1
+/usr/bin/gcc -m64 -Wl,--build-id=0x3df4d89243ce46e9b2ffe707e3b7b75057767b0c -o $WORK/b001/exe/a.out -Wl,--export-dynamic-symbol=_cgo_panic -Wl,--export-dynamic-symbol=_cgo_topofstack -Wl,--export-dynamic-symbol=_glfwKeySym2Unicode -Wl,--export-dynamic-symbol=crosscall2 -Wl,--export-dynamic-symbol=goCharCB -Wl,--export-dynamic-symbol=goCharModsCB -Wl,--export-dynamic-symbol=goCursorEnterCB -Wl,--export-dynamic-symbol=goCursorPosCB -Wl,--export-dynamic-symbol=goDropCB -Wl,--export-dynamic-symbol=goErrorCB -Wl,--export-dynamic-symbol=goFramebufferSizeCB -Wl,--export-dynamic-symbol=goJoystickCB -Wl,--export-dynamic-symbol=goKeyCB -Wl,--export-dynamic-symbol=goMonitorCB -Wl,--export-dynamic-symbol=goMouseButtonCB -Wl,--export-dynamic-symbol=goScrollCB -Wl,--export-dynamic-symbol=goWindowCloseCB -Wl,--export-dynamic-symbol=goWindowContentScaleCB -Wl,--export-dynamic-symbol=goWindowFocusCB -Wl,--export-dynamic-symbol=goWindowIconifyCB -Wl,--export-dynamic-symbol=goWindowMaximizeCB -Wl,--export-dynamic-symbol=goWindowPosCB -Wl,--export-dynamic-symbol=goWindowRefreshCB -Wl,--export-dynamic-symbol=goWindowSizeCB -Wl,--compress-debug-sections=zlib /tmp/go-link-875637909/go.o /tmp/go-link-875637909/000000.o /tmp/go-link-875637909/000001.o /tmp/go-link-875637909/000002.o /tmp/go-link-875637909/000003.o /tmp/go-link-875637909/000004.o /tmp/go-link-875637909/000005.o /tmp/go-link-875637909/000006.o /tmp/go-link-875637909/000007.o /tmp/go-link-875637909/000008.o /tmp/go-link-875637909/000009.o /tmp/go-link-875637909/000010.o /tmp/go-link-875637909/000011.o /tmp/go-link-875637909/000012.o /tmp/go-link-875637909/000013.o /tmp/go-link-875637909/000014.o /tmp/go-link-875637909/000015.o /tmp/go-link-875637909/000016.o /tmp/go-link-875637909/000017.o /tmp/go-link-875637909/000018.o /tmp/go-link-875637909/000019.o /tmp/go-link-875637909/000020.o /tmp/go-link-875637909/000021.o /tmp/go-link-875637909/000022.o /tmp/go-link-875637909/000023.o /tmp/go-link-875637909/000024.o /tmp/go-link-875637909/000025.o /tmp/go-link-875637909/000026.o /tmp/go-link-875637909/000027.o /tmp/go-link-875637909/000028.o /tmp/go-link-875637909/000029.o /tmp/go-link-875637909/000030.o /tmp/go-link-875637909/000031.o /tmp/go-link-875637909/000032.o /tmp/go-link-875637909/000033.o /tmp/go-link-875637909/000034.o /tmp/go-link-875637909/000035.o /tmp/go-link-875637909/000036.o /tmp/go-link-875637909/000037.o /tmp/go-link-875637909/000038.o /tmp/go-link-875637909/000039.o /tmp/go-link-875637909/000040.o /tmp/go-link-875637909/000041.o /tmp/go-link-875637909/000042.o /tmp/go-link-875637909/000043.o /tmp/go-link-875637909/000044.o /tmp/go-link-875637909/000045.o /tmp/go-link-875637909/000046.o /tmp/go-link-875637909/000047.o /tmp/go-link-875637909/000048.o /tmp/go-link-875637909/000049.o /tmp/go-link-875637909/000050.o /tmp/go-link-875637909/000051.o /tmp/go-link-875637909/000052.o /tmp/go-link-875637909/000053.o /tmp/go-link-875637909/000054.o /tmp/go-link-875637909/000055.o /tmp/go-link-875637909/000056.o /tmp/go-link-875637909/000057.o /tmp/go-link-875637909/000058.o /tmp/go-link-875637909/000059.o /tmp/go-link-875637909/000060.o /tmp/go-link-875637909/000061.o /tmp/go-link-875637909/000062.o /tmp/go-link-875637909/000063.o /tmp/go-link-875637909/000064.o /tmp/go-link-875637909/000065.o /tmp/go-link-875637909/000066.o /tmp/go-link-875637909/000067.o /tmp/go-link-875637909/000068.o /tmp/go-link-875637909/000069.o /tmp/go-link-875637909/000070.o /tmp/go-link-875637909/000071.o /tmp/go-link-875637909/000072.o /tmp/go-link-875637909/000073.o /tmp/go-link-875637909/000074.o /tmp/go-link-875637909/000075.o /tmp/go-link-875637909/000076.o /tmp/go-link-875637909/000077.o /tmp/go-link-875637909/000078.o /tmp/go-link-875637909/000079.o /tmp/go-link-875637909/000080.o /tmp/go-link-875637909/000081.o /tmp/go-link-875637909/000082.o /tmp/go-link-875637909/000083.o /tmp/go-link-875637909/000084.o /tmp/go-link-875637909/000085.o /tmp/go-link-875637909/000086.o /tmp/go-link-875637909/000087.o /tmp/go-link-875637909/000088.o /tmp/go-link-875637909/000089.o /tmp/go-link-875637909/000090.o /tmp/go-link-875637909/000091.o /tmp/go-link-875637909/000092.o /tmp/go-link-875637909/000093.o /tmp/go-link-875637909/000094.o /tmp/go-link-875637909/000095.o /tmp/go-link-875637909/000096.o /tmp/go-link-875637909/000097.o -O2 -g -O2 -g -lpthread -O2 -g -lX11 -lXrandr -lXxf86vm -lXi -lXcursor -lm -lXinerama -ldl -lrt -O2 -g -lresolv -O2 -g -lGL -O2 -g -lGL -lX11 -lXrandr -lXxf86vm -lXi -lXcursor -lm -lXinerama -ldl -lrt -O2 -g -ldl -no-pie
+/usr/bin/ld: /tmp/go-link-875637909/000078.o: in function `goErrorCB':
+/tmp/go-build/_cgo_export.c:27: multiple definition of `goErrorCB'; /tmp/go-link-875637909/000043.o:/tmp/go-build/_cgo_export.c:27: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000078.o: in function `goMouseButtonCB':
+/tmp/go-build/_cgo_export.c:66: multiple definition of `goMouseButtonCB'; /tmp/go-link-875637909/000043.o:/tmp/go-build/_cgo_export.c:47: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000078.o: in function `goCursorPosCB':
+/tmp/go-build/_cgo_export.c:89: multiple definition of `goCursorPosCB'; /tmp/go-link-875637909/000043.o:/tmp/go-build/_cgo_export.c:70: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000078.o: in function `goCursorEnterCB':
+/tmp/go-build/_cgo_export.c:110: multiple definition of `goCursorEnterCB'; /tmp/go-link-875637909/000043.o:/tmp/go-build/_cgo_export.c:91: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000078.o: in function `goScrollCB':
+/tmp/go-build/_cgo_export.c:129: multiple definition of `goScrollCB'; /tmp/go-link-875637909/000043.o:/tmp/go-build/_cgo_export.c:110: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000078.o: in function `goKeyCB':
+/tmp/go-build/_cgo_export.c:150: multiple definition of `goKeyCB'; /tmp/go-link-875637909/000043.o:/tmp/go-build/_cgo_export.c:131: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000078.o: in function `goCharCB':
+/tmp/go-build/_cgo_export.c:175: multiple definition of `goCharCB'; /tmp/go-link-875637909/000043.o:/tmp/go-build/_cgo_export.c:156: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000078.o: in function `goCharModsCB':
+/tmp/go-build/_cgo_export.c:194: multiple definition of `goCharModsCB'; /tmp/go-link-875637909/000043.o:/tmp/go-build/_cgo_export.c:175: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000078.o: in function `goDropCB':
+/tmp/go-build/_cgo_export.c:215: multiple definition of `goDropCB'; /tmp/go-link-875637909/000043.o:/tmp/go-build/_cgo_export.c:196: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000078.o: in function `goMonitorCB':
+/tmp/go-build/_cgo_export.c:237: multiple definition of `goMonitorCB'; /tmp/go-link-875637909/000043.o:/tmp/go-build/_cgo_export.c:218: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000078.o: in function `goWindowPosCB':
+/tmp/go-build/_cgo_export.c:256: multiple definition of `goWindowPosCB'; /tmp/go-link-875637909/000043.o:/tmp/go-build/_cgo_export.c:237: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000078.o: in function `goWindowSizeCB':
+/tmp/go-build/_cgo_export.c:277: multiple definition of `goWindowSizeCB'; /tmp/go-link-875637909/000043.o:/tmp/go-build/_cgo_export.c:258: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000078.o: in function `goFramebufferSizeCB':
+/tmp/go-build/_cgo_export.c:298: multiple definition of `goFramebufferSizeCB'; /tmp/go-link-875637909/000043.o:/tmp/go-build/_cgo_export.c:279: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000078.o: in function `goWindowCloseCB':
+/tmp/go-build/_cgo_export.c:319: multiple definition of `goWindowCloseCB'; /tmp/go-link-875637909/000043.o:/tmp/go-build/_cgo_export.c:300: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000078.o: in function `goWindowMaximizeCB':
+/tmp/go-build/_cgo_export.c:336: multiple definition of `goWindowMaximizeCB'; /tmp/go-link-875637909/000043.o:/tmp/go-build/_cgo_export.c:317: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000078.o: in function `goWindowRefreshCB':
+/tmp/go-build/_cgo_export.c:355: multiple definition of `goWindowRefreshCB'; /tmp/go-link-875637909/000043.o:/tmp/go-build/_cgo_export.c:336: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000078.o: in function `goWindowFocusCB':
+/tmp/go-build/_cgo_export.c:372: multiple definition of `goWindowFocusCB'; /tmp/go-link-875637909/000043.o:/tmp/go-build/_cgo_export.c:353: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000078.o: in function `goWindowIconifyCB':
+/tmp/go-build/_cgo_export.c:391: multiple definition of `goWindowIconifyCB'; /tmp/go-link-875637909/000043.o:/tmp/go-build/_cgo_export.c:372: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000078.o: in function `goWindowContentScaleCB':
+/tmp/go-build/_cgo_export.c:410: multiple definition of `goWindowContentScaleCB'; /tmp/go-link-875637909/000043.o:/tmp/go-build/_cgo_export.c:391: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o:/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/init.c:46: multiple definition of `_glfw'; /tmp/go-link-875637909/000057.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/init_unix.c:22: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwChooseFBConfig':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/context.c:181: multiple definition of `_glfwChooseFBConfig'; /tmp/go-link-875637909/000054.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/context_unix.c:166: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwStringInExtensionString':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/context.c:583: multiple definition of `_glfwStringInExtensionString'; /tmp/go-link-875637909/000054.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/context_unix.c:564: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfw_strdup':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/init.c:117: multiple definition of `_glfw_strdup'; /tmp/go-link-875637909/000057.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/init_unix.c:171: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfw_fminf':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/init.c:126: multiple definition of `_glfw_fminf'; /tmp/go-link-875637909/000057.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/init_unix.c:190: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfw_fmaxf':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/init.c:138: multiple definition of `_glfw_fmaxf'; /tmp/go-link-875637909/000057.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/init_unix.c:202: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwInputError':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/init.c:156: multiple definition of `_glfwInputError'; /tmp/go-link-875637909/000057.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/init_unix.c:220: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwIsValidContextConfig':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/context.c:50: multiple definition of `_glfwIsValidContextConfig'; /tmp/go-link-875637909/000054.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/context_unix.c:28: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwMakeContextCurrent':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/context.c:614: multiple definition of `glfwMakeContextCurrent'; /tmp/go-link-875637909/000054.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/context_unix.c:599: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetCurrentContext':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/context.c:639: multiple definition of `glfwGetCurrentContext'; /tmp/go-link-875637909/000054.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/context_unix.c:622: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSwapBuffers':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/context.c:646: multiple definition of `glfwSwapBuffers'; /tmp/go-link-875637909/000054.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/context_unix.c:629: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSwapInterval':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/context.c:664: multiple definition of `glfwSwapInterval'; /tmp/go-link-875637909/000054.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/context_unix.c:646: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwExtensionSupported':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/context.c:678: multiple definition of `glfwExtensionSupported'; /tmp/go-link-875637909/000054.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/context_unix.c:654: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwRefreshContextAttribs':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/context.c:348: multiple definition of `_glfwRefreshContextAttribs'; /tmp/go-link-875637909/000054.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/context_unix.c:327: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetProcAddress':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/context.c:744: multiple definition of `glfwGetProcAddress'; /tmp/go-link-875637909/000054.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/context_unix.c:713: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwInitHint':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/init.c:279: multiple definition of `glfwInitHint'; /tmp/go-link-875637909/000057.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/init_unix.c:329: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetError':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/init.c:319: multiple definition of `glfwGetError'; /tmp/go-link-875637909/000057.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/init_unix.c:351: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetErrorCallback':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/init.c:337: multiple definition of `glfwSetErrorCallback'; /tmp/go-link-875637909/000057.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/init_unix.c:369: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwInputKey':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:263: multiple definition of `_glfwInputKey'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:28: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwInputChar':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:294: multiple definition of `_glfwInputChar'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:59: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwInputScroll':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:314: multiple definition of `_glfwInputScroll'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:79: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwInputMouseClick':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:322: multiple definition of `_glfwInputMouseClick'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:87: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwInputCursorPos':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:342: multiple definition of `_glfwInputCursorPos'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:107: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwInputCursorEnter':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:356: multiple definition of `_glfwInputCursorEnter'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:121: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwInputDrop':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:364: multiple definition of `_glfwInputDrop'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:129: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwCenterCursorInContentArea':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:461: multiple definition of `_glfwCenterCursorInContentArea'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:141: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetInputMode':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:474: multiple definition of `glfwGetInputMode'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:154: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetInputMode':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:499: multiple definition of `glfwSetInputMode'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:179: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwRawMouseMotionSupported':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:593: multiple definition of `glfwRawMouseMotionSupported'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:273: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetKeyName':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:598: multiple definition of `glfwGetKeyName'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:278: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetKeyScancode':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:617: multiple definition of `glfwGetKeyScancode'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:304: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetKey':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:630: multiple definition of `glfwGetKey'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:316: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetMouseButton':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:653: multiple definition of `glfwGetMouseButton'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:339: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetCursorPos':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:678: multiple definition of `glfwGetCursorPos'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:364: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetCursorPos':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:699: multiple definition of `glfwSetCursorPos'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:385: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetCursor':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:820: multiple definition of `glfwSetCursor'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:517: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwDestroyCursor':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:782: multiple definition of `glfwDestroyCursor'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:479: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwCreateCursor':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:731: multiple definition of `glfwCreateCursor'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:417: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwCreateStandardCursor':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:752: multiple definition of `glfwCreateStandardCursor'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:445: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetKeyCallback':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:830: multiple definition of `glfwSetKeyCallback'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:527: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetCharCallback':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:840: multiple definition of `glfwSetCharCallback'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:537: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetCharModsCallback':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:850: multiple definition of `glfwSetCharModsCallback'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:547: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetMouseButtonCallback':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:861: multiple definition of `glfwSetMouseButtonCallback'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:558: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetCursorPosCallback':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:872: multiple definition of `glfwSetCursorPosCallback'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:569: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetCursorEnterCallback':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:883: multiple definition of `glfwSetCursorEnterCallback'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:580: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetScrollCallback':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:894: multiple definition of `glfwSetScrollCallback'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:591: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetDropCallback':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:904: multiple definition of `glfwSetDropCallback'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:601: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetClipboardString':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:1313: multiple definition of `glfwSetClipboardString'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:612: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetClipboardString':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/input.c:1321: multiple definition of `glfwGetClipboardString'; /tmp/go-link-875637909/000058.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/input_unix.c:620: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwInputMonitorWindow':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:157: multiple definition of `_glfwInputMonitorWindow'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:135: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwAllocMonitor':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:168: multiple definition of `_glfwAllocMonitor'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:146: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwAllocGammaArrays':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:199: multiple definition of `_glfwAllocGammaArrays'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:175: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwFreeGammaArrays':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:209: multiple definition of `_glfwFreeGammaArrays'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:185: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwFreeMonitor':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:183: multiple definition of `_glfwFreeMonitor'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:160: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwInputMonitor':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:98: multiple definition of `_glfwInputMonitor'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:76: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwChooseVideoMode':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:221: multiple definition of `_glfwChooseVideoMode'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:197: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `compareVideoModes':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:46: multiple definition of `_glfwCompareVideoModes'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:24: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwSplitBPP':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:283: multiple definition of `_glfwSplitBPP'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:259: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetMonitors':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:303: multiple definition of `glfwGetMonitors'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:279: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetPrimaryMonitor':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:316: multiple definition of `glfwGetPrimaryMonitor'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:292: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetMonitorPos':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:327: multiple definition of `glfwGetMonitorPos'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:303: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetMonitorWorkarea':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:344: multiple definition of `glfwGetMonitorWorkarea'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:320: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetMonitorPhysicalSize':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:363: multiple definition of `glfwGetMonitorPhysicalSize'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:339: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetMonitorContentScale':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:382: multiple definition of `glfwGetMonitorContentScale'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:358: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetMonitorName':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:394: multiple definition of `glfwGetMonitorName'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:370: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetMonitorUserPointer':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:405: multiple definition of `glfwSetMonitorUserPointer'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:381: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetMonitorUserPointer':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:412: multiple definition of `glfwGetMonitorUserPointer'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:388: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetMonitorCallback':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:422: multiple definition of `glfwSetMonitorCallback'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:398: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetVideoModes':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:428: multiple definition of `glfwGetVideoModes'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:404: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetVideoMode':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:445: multiple definition of `glfwGetVideoMode'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:421: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetGammaRamp':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:503: multiple definition of `glfwGetGammaRamp'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:479: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetGammaRamp':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:517: multiple definition of `glfwSetGammaRamp'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:493: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetGamma':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/monitor.c:456: multiple definition of `glfwSetGamma'; /tmp/go-link-875637909/000059.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/monitor_unix.c:432: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwInputWindowFocus':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:46: multiple definition of `_glfwInputWindowFocus'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:24: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwInputWindowPos':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:76: multiple definition of `_glfwInputWindowPos'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:54: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwInputWindowSize':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:85: multiple definition of `_glfwInputWindowSize'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:63: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwInputWindowIconify':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:93: multiple definition of `_glfwInputWindowIconify'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:71: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwInputWindowMaximize':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:101: multiple definition of `_glfwInputWindowMaximize'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:79: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwInputFramebufferSize':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:110: multiple definition of `_glfwInputFramebufferSize'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:88: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwInputWindowContentScale':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:119: multiple definition of `_glfwInputWindowContentScale'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:97: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwInputWindowDamage':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:127: multiple definition of `_glfwInputWindowDamage'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:105: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwInputWindowCloseRequest':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:137: multiple definition of `_glfwInputWindowCloseRequest'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:115: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwInputWindowMonitor':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:145: multiple definition of `_glfwInputWindowMonitor'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:123: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwDefaultWindowHints':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:251: multiple definition of `glfwDefaultWindowHints'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:208: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwWindowHint':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:290: multiple definition of `glfwWindowHint'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:247: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwWindowHintString':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:418: multiple definition of `glfwWindowHintString'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:378: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwDestroyWindow':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:442: multiple definition of `glfwDestroyWindow'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:402: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwInit':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/init.c:225: multiple definition of `glfwInit'; /tmp/go-link-875637909/000057.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/init_unix.c:289: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwTerminate':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/init.c:271: multiple definition of `glfwTerminate'; /tmp/go-link-875637909/000057.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/init_unix.c:321: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwCreateWindow':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:156: multiple definition of `glfwCreateWindow'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:134: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwWindowShouldClose':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:475: multiple definition of `glfwWindowShouldClose'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:435: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetWindowShouldClose':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:486: multiple definition of `glfwSetWindowShouldClose'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:446: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetWindowTitle':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:493: multiple definition of `glfwSetWindowTitle'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:453: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetWindowIcon':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:504: multiple definition of `glfwSetWindowIcon'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:464: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetWindowPos':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:517: multiple definition of `glfwGetWindowPos'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:498: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetWindowPos':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:531: multiple definition of `glfwSetWindowPos'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:512: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetWindowSize':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:544: multiple definition of `glfwGetWindowSize'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:525: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetWindowSize':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:556: multiple definition of `glfwSetWindowSize'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:537: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetWindowSizeLimits':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:575: multiple definition of `glfwSetWindowSizeLimits'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:556: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetWindowAspectRatio':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:616: multiple definition of `glfwSetWindowAspectRatio'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:597: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetFramebufferSize':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:647: multiple definition of `glfwGetFramebufferSize'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:628: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetWindowFrameSize':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:663: multiple definition of `glfwGetWindowFrameSize'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:644: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetWindowContentScale':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:682: multiple definition of `glfwGetWindowContentScale'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:663: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetWindowOpacity':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:694: multiple definition of `glfwGetWindowOpacity'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:675: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetWindowOpacity':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:703: multiple definition of `glfwSetWindowOpacity'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:684: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwIconifyWindow':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:724: multiple definition of `glfwIconifyWindow'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:705: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwRestoreWindow':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:733: multiple definition of `glfwRestoreWindow'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:714: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwMaximizeWindow':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:742: multiple definition of `glfwMaximizeWindow'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:723: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwShowWindow':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:753: multiple definition of `glfwShowWindow'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:734: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwRequestWindowAttention':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:771: multiple definition of `glfwRequestWindowAttention'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:752: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwHideWindow':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:781: multiple definition of `glfwHideWindow'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:762: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwFocusWindow':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:794: multiple definition of `glfwFocusWindow'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:775: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetWindowAttrib':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:802: multiple definition of `glfwGetWindowAttrib'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:783: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetWindowAttrib':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:863: multiple definition of `glfwSetWindowAttrib'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:846: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetWindowMonitor':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:905: multiple definition of `glfwGetWindowMonitor'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:893: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetWindowMonitor':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:918: multiple definition of `glfwSetWindowMonitor'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:906: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetWindowUserPointer':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:955: multiple definition of `glfwSetWindowUserPointer'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:943: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetWindowUserPointer':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:962: multiple definition of `glfwGetWindowUserPointer'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:950: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetWindowPosCallback':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:972: multiple definition of `glfwSetWindowPosCallback'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:960: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetWindowSizeCallback':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:983: multiple definition of `glfwSetWindowSizeCallback'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:971: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetWindowCloseCallback':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:994: multiple definition of `glfwSetWindowCloseCallback'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:982: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetWindowRefreshCallback':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:1005: multiple definition of `glfwSetWindowRefreshCallback'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:993: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetWindowFocusCallback':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:1016: multiple definition of `glfwSetWindowFocusCallback'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:1004: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetWindowIconifyCallback':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:1027: multiple definition of `glfwSetWindowIconifyCallback'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:1015: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetWindowMaximizeCallback':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:1038: multiple definition of `glfwSetWindowMaximizeCallback'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:1026: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetFramebufferSizeCallback':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:1049: multiple definition of `glfwSetFramebufferSizeCallback'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:1037: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwSetWindowContentScaleCallback':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:1060: multiple definition of `glfwSetWindowContentScaleCallback'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:1048: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwPollEvents':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:1071: multiple definition of `glfwPollEvents'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:1059: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwWaitEvents':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:1077: multiple definition of `glfwWaitEvents'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:1065: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwWaitEventsTimeout':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:1083: multiple definition of `glfwWaitEventsTimeout'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:1071: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwPostEmptyEvent':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/window.c:1099: multiple definition of `glfwPostEmptyEvent'; /tmp/go-link-875637909/000063.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/window_unix.c:1087: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwTerminateOSMesa':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/osmesa_context.c:183: multiple definition of `_glfwTerminateOSMesa'; /tmp/go-link-875637909/000060.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/osmesa_context_unix.c:159: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwInitOSMesa':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/osmesa_context.c:114: multiple definition of `_glfwInitOSMesa'; /tmp/go-link-875637909/000060.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/osmesa_context_unix.c:91: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `_glfwCreateContextOSMesa':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/osmesa_context.c:201: multiple definition of `_glfwCreateContextOSMesa'; /tmp/go-link-875637909/000060.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/osmesa_context_unix.c:177: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetOSMesaColorBuffer':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/osmesa_context.c:297: multiple definition of `glfwGetOSMesaColorBuffer'; /tmp/go-link-875637909/000060.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/osmesa_context_unix.c:273: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetOSMesaDepthBuffer':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/osmesa_context.c:330: multiple definition of `glfwGetOSMesaDepthBuffer'; /tmp/go-link-875637909/000060.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/osmesa_context_unix.c:312: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000080.o: in function `glfwGetOSMesaContext':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/osmesa_context.c:360: multiple definition of `glfwGetOSMesaContext'; /tmp/go-link-875637909/000060.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/osmesa_context_unix.c:348: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwGrabErrorHandlerX11':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_init.c:867: multiple definition of `_glfwGrabErrorHandlerX11'; /tmp/go-link-875637909/000064.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_init_linbsd.c:1044: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwReleaseErrorHandlerX11':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_init.c:874: multiple definition of `_glfwReleaseErrorHandlerX11'; /tmp/go-link-875637909/000064.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_init_linbsd.c:1053: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwInputErrorX11':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_init.c:883: multiple definition of `_glfwInputErrorX11'; /tmp/go-link-875637909/000064.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_init_linbsd.c:1063: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwCreateCursorX11':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_init.c:894: multiple definition of `_glfwCreateCursorX11'; /tmp/go-link-875637909/000064.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_init_linbsd.c:1074: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPollMonitorsX11':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_monitor.c:102: multiple definition of `_glfwPollMonitorsX11'; /tmp/go-link-875637909/000065.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_monitor_linbsd.c:80: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwRestoreVideoModeX11':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_monitor.c:282: multiple definition of `_glfwRestoreVideoModeX11'; /tmp/go-link-875637909/000065.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_monitor_linbsd.c:260: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformFreeMonitor':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_monitor.c:315: multiple definition of `_glfwPlatformFreeMonitor'; /tmp/go-link-875637909/000065.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_monitor_linbsd.c:293: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformGetMonitorPos':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_monitor.c:318: multiple definition of `_glfwPlatformGetMonitorPos'; /tmp/go-link-875637909/000065.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_monitor_linbsd.c:296: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformGetMonitorContentScale':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_monitor.c:342: multiple definition of `_glfwPlatformGetMonitorContentScale'; /tmp/go-link-875637909/000065.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_monitor_linbsd.c:320: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformGetVideoMode':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_monitor.c:493: multiple definition of `_glfwPlatformGetVideoMode'; /tmp/go-link-875637909/000065.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_monitor_linbsd.c:471: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwSetVideoModeX11':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_monitor.c:228: multiple definition of `_glfwSetVideoModeX11'; /tmp/go-link-875637909/000065.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_monitor_linbsd.c:206: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformGetVideoModes':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_monitor.c:441: multiple definition of `_glfwPlatformGetVideoModes'; /tmp/go-link-875637909/000065.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_monitor_linbsd.c:419: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformGetGammaRamp':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_monitor.c:523: multiple definition of `_glfwPlatformGetGammaRamp'; /tmp/go-link-875637909/000065.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_monitor_linbsd.c:501: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformSetGammaRamp':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_monitor.c:561: multiple definition of `_glfwPlatformSetGammaRamp'; /tmp/go-link-875637909/000065.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_monitor_linbsd.c:539: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `glfwGetX11Adapter':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_monitor.c:604: multiple definition of `glfwGetX11Adapter'; /tmp/go-link-875637909/000065.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_monitor_linbsd.c:582: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `glfwGetX11Monitor':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_monitor.c:611: multiple definition of `glfwGetX11Monitor'; /tmp/go-link-875637909/000065.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_monitor_linbsd.c:589: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwGetWindowPropertyX11':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:1886: multiple definition of `_glfwGetWindowPropertyX11'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:1956: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformGetMonitorWorkarea':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_monitor.c:349: multiple definition of `_glfwPlatformGetMonitorWorkarea'; /tmp/go-link-875637909/000065.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_monitor_linbsd.c:327: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwIsVisualTransparentX11':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:1909: multiple definition of `_glfwIsVisualTransparentX11'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:1979: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformDestroyWindow':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2041: multiple definition of `_glfwPlatformDestroyWindow'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2124: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformSetWindowTitle':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2075: multiple definition of `_glfwPlatformSetWindowTitle'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2158: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformSetWindowIcon':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2107: multiple definition of `_glfwPlatformSetWindowIcon'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2190: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformGetWindowPos':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2151: multiple definition of `_glfwPlatformGetWindowPos'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2240: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformGetWindowSize':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2189: multiple definition of `_glfwPlatformGetWindowSize'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2278: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformSetWindowSize':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2200: multiple definition of `_glfwPlatformSetWindowSize'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2289: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformSetWindowSizeLimits':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2220: multiple definition of `_glfwPlatformSetWindowSizeLimits'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2309: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformSetWindowAspectRatio':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2228: multiple definition of `_glfwPlatformSetWindowAspectRatio'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2317: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformGetFramebufferSize':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2237: multiple definition of `_glfwPlatformGetFramebufferSize'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2326: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformGetWindowContentScale':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2301: multiple definition of `_glfwPlatformGetWindowContentScale'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2393: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformIconifyWindow':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2312: multiple definition of `_glfwPlatformIconifyWindow'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2401: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformHideWindow':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2434: multiple definition of `_glfwPlatformHideWindow'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2523: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformRequestWindowAttention':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2441: multiple definition of `_glfwPlatformRequestWindowAttention'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2530: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformWindowFocused':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2519: multiple definition of `_glfwPlatformWindowFocused'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2612: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformWindowIconified':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2528: multiple definition of `_glfwPlatformWindowIconified'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2621: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformWindowVisible':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2533: multiple definition of `_glfwPlatformWindowVisible'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2626: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformSetWindowPos':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2165: multiple definition of `_glfwPlatformSetWindowPos'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2254: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformMaximizeWindow':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2360: multiple definition of `_glfwPlatformMaximizeWindow'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2449: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformFocusWindow':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2452: multiple definition of `_glfwPlatformFocusWindow'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2541: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformWindowMaximized':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2540: multiple definition of `_glfwPlatformWindowMaximized'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2633: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformWindowHovered':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2575: multiple definition of `_glfwPlatformWindowHovered'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2668: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformFramebufferTransparent':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2598: multiple definition of `_glfwPlatformFramebufferTransparent'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2697: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformSetWindowResizable':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2605: multiple definition of `_glfwPlatformSetWindowResizable'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2704: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformSetWindowDecorated':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2612: multiple definition of `_glfwPlatformSetWindowDecorated'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2712: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformSetWindowFloating':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2634: multiple definition of `_glfwPlatformSetWindowFloating'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2716: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformGetWindowOpacity':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2704: multiple definition of `_glfwPlatformGetWindowOpacity'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2805: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformSetWindowOpacity':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2727: multiple definition of `_glfwPlatformSetWindowOpacity'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2828: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformSetRawMouseMotion':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2736: multiple definition of `_glfwPlatformSetRawMouseMotion'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2837: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformRawMouseMotionSupported':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2750: multiple definition of `_glfwPlatformRawMouseMotionSupported'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2851: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformPostEmptyEvent':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2807: multiple definition of `_glfwPlatformPostEmptyEvent'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2898: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformGetCursorPos':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2818: multiple definition of `_glfwPlatformGetCursorPos'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2903: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformSetCursorPos':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2835: multiple definition of `_glfwPlatformSetCursorPos'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2920: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformSetCursorMode':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2846: multiple definition of `_glfwPlatformSetCursorMode'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2931: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformGetKeyScancode':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2892: multiple definition of `_glfwPlatformGetKeyScancode'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:3002: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformCreateCursor':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2898: multiple definition of `_glfwPlatformCreateCursor'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:3008: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformCreateStandardCursor':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2910: multiple definition of `_glfwPlatformCreateStandardCursor'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:3017: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformDestroyCursor':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2938: multiple definition of `_glfwPlatformDestroyCursor'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:3117: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformSetCursor':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2944: multiple definition of `_glfwPlatformSetCursor'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:3123: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformSetClipboardString':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2952: multiple definition of `_glfwPlatformSetClipboardString'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:3131: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `glfwGetX11Display':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:3130: multiple definition of `glfwGetX11Display'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:3161: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `glfwGetX11Window':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:3137: multiple definition of `glfwGetX11Window'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:3168: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `glfwSetX11SelectionString':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:3142: multiple definition of `glfwSetX11SelectionString'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:3173: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwInitGLX':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/glx_context.c:254: multiple definition of `_glfwInitGLX'; /tmp/go-link-875637909/000056.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/glx_context_linbsd.c:234: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwTerminateGLX':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/glx_context.c:425: multiple definition of `_glfwTerminateGLX'; /tmp/go-link-875637909/000056.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/glx_context_linbsd.c:407: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwCreateContextGLX':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/glx_context.c:448: multiple definition of `_glfwCreateContextGLX'; /tmp/go-link-875637909/000056.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/glx_context_linbsd.c:430: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwChooseVisualGLX':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/glx_context.c:640: multiple definition of `_glfwChooseVisualGLX'; /tmp/go-link-875637909/000056.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/glx_context_linbsd.c:622: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `glfwGetGLXContext':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/glx_context.c:672: multiple definition of `glfwGetGLXContext'; /tmp/go-link-875637909/000056.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/glx_context_linbsd.c:654: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `glfwGetGLXWindow':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/glx_context.c:686: multiple definition of `glfwGetGLXWindow'; /tmp/go-link-875637909/000056.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/glx_context_linbsd.c:668: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwInitTimerPOSIX':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/posix_time.c:43: multiple definition of `_glfwInitTimerPOSIX'; /tmp/go-link-875637909/000062.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/posix_time_linbsd.c:21: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformInit':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_init.c:933: multiple definition of `_glfwPlatformInit'; /tmp/go-link-875637909/000064.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_init_linbsd.c:1113: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformGetTimerValue':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/posix_time.c:66: multiple definition of `_glfwPlatformGetTimerValue'; /tmp/go-link-875637909/000062.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/posix_time_linbsd.c:44: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformGetTimerFrequency':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/posix_time.c:85: multiple definition of `_glfwPlatformGetTimerFrequency'; /tmp/go-link-875637909/000062.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/posix_time_linbsd.c:63: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPushSelectionToManagerX11':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:1919: multiple definition of `_glfwPushSelectionToManagerX11'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:1989: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformGetWindowFrameSize':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2243: multiple definition of `_glfwPlatformGetWindowFrameSize'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2332: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformGetClipboardString':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2971: multiple definition of `_glfwPlatformGetClipboardString'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:3151: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `glfwGetX11SelectionString':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:3163: multiple definition of `glfwGetX11SelectionString'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:3194: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformSetWindowMonitor':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2470: multiple definition of `_glfwPlatformSetWindowMonitor'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2559: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformShowWindow':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2425: multiple definition of `_glfwPlatformShowWindow'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2514: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformRestoreWindow':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2327: multiple definition of `_glfwPlatformRestoreWindow'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2416: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformCreateTls':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/posix_thread.c:41: multiple definition of `_glfwPlatformCreateTls'; /tmp/go-link-875637909/000061.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/posix_thread_unix.c:19: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformDestroyTls':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/posix_thread.c:56: multiple definition of `_glfwPlatformDestroyTls'; /tmp/go-link-875637909/000061.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/posix_thread_unix.c:34: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformGetTls':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/posix_thread.c:64: multiple definition of `_glfwPlatformGetTls'; /tmp/go-link-875637909/000061.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/posix_thread_unix.c:42: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformSetTls':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/posix_thread.c:70: multiple definition of `_glfwPlatformSetTls'; /tmp/go-link-875637909/000061.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/posix_thread_unix.c:48: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformCreateMutex':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/posix_thread.c:75: multiple definition of `_glfwPlatformCreateMutex'; /tmp/go-link-875637909/000061.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/posix_thread_unix.c:53: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformDestroyMutex':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/posix_thread.c:88: multiple definition of `_glfwPlatformDestroyMutex'; /tmp/go-link-875637909/000061.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/posix_thread_unix.c:66: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformLockMutex':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/posix_thread.c:96: multiple definition of `_glfwPlatformLockMutex'; /tmp/go-link-875637909/000061.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/posix_thread_unix.c:74: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformUnlockMutex':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/posix_thread.c:102: multiple definition of `_glfwPlatformUnlockMutex'; /tmp/go-link-875637909/000061.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/posix_thread_unix.c:80: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwKeySym2Unicode':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/xkb_unicode.c:911: multiple definition of `_glfwKeySym2Unicode'; /tmp/go-link-875637909/000043.o:/tmp/go-build/_cgo_export.c:412: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformPollEvents':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2754: multiple definition of `_glfwPlatformPollEvents'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2855: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformWaitEvents':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2788: multiple definition of `_glfwPlatformWaitEvents'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2886: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformWaitEventsTimeout':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2796: multiple definition of `_glfwPlatformWaitEventsTimeout'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2892: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformGetScancodeName':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:2861: multiple definition of `_glfwPlatformGetScancodeName'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2970: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwTerminateEGL':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/egl_context.c:436: multiple definition of `_glfwTerminateEGL'; /tmp/go-link-875637909/000055.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/egl_context_unix.c:449: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformTerminate':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_init.c:1004: multiple definition of `_glfwPlatformTerminate'; /tmp/go-link-875637909/000064.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_init_linbsd.c:1179: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwInitEGL':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/egl_context.c:304: multiple definition of `_glfwInitEGL'; /tmp/go-link-875637909/000055.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/egl_context_unix.c:316: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwCreateContextEGL':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/egl_context.c:462: multiple definition of `_glfwCreateContextEGL'; /tmp/go-link-875637909/000055.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/egl_context_unix.c:475: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwChooseVisualEGL':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/egl_context.c:715: multiple definition of `_glfwChooseVisualEGL'; /tmp/go-link-875637909/000055.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/egl_context_unix.c:725: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `_glfwPlatformCreateWindow':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/x11_window.c:1973: multiple definition of `_glfwPlatformCreateWindow'; /tmp/go-link-875637909/000066.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/x11_window_linbsd.c:2039: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `glfwGetEGLDisplay':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/egl_context.c:758: multiple definition of `glfwGetEGLDisplay'; /tmp/go-link-875637909/000055.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/egl_context_unix.c:764: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `glfwGetEGLContext':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/egl_context.c:763: multiple definition of `glfwGetEGLContext'; /tmp/go-link-875637909/000055.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/egl_context_unix.c:769: first defined here
+/usr/bin/ld: /tmp/go-link-875637909/000081.o: in function `glfwGetEGLSurface':
+/home/aka/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20200707082815-5321531c36a2/glfw/src/egl_context.c:777: multiple definition of `glfwGetEGLSurface'; /tmp/go-link-875637909/000055.o:/home/aka/go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.9.9/internal/glfw/egl_context_unix.c:783: first defined here
+collect2: error: ld returned 1 exit status
+
