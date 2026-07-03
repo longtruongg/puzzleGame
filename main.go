@@ -2,6 +2,7 @@ package main
 
 import (
 	"log"
+
 	"github.com/hajimehoshi/ebiten/v2"
 )
 
@@ -81,10 +82,8 @@ import (
 //		return g.Width, g.Height
 //	}
 func main() {
-	ebiten.SetWindowSize(1280, 720)
-	ebiten.SetWindowTitle("Puzzle-Cam Go - Step 1: Webcam")
+	ebiten.SetWindowSize(1280, 920)
 	game := NewGame()
-	ebiten.SetWindowSize(1280, 720)
 	ebiten.SetWindowTitle("Webcam - SPACE to capture -- Q to Close")
 	defer game.webCam.Close()
 	defer game.mat.Close()

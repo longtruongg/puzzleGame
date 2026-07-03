@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"image"
 	"image/color"
 	"math/rand"
@@ -16,14 +15,18 @@ type Game struct {
 	webCam             *gocv.VideoCapture
 	frame              *ebiten.Image
 	mat                *gocv.Mat
-	puzzleImage        *ebiten.Image // ref image captured
+	liveImage          *ebiten.Image
+	capturedImage      *ebiten.Image // after image -> pin top left
 	piceces            []*PuzzleImg
 	gameState          string // live, puzzle
 	gridCols, gridRows int
+
+	dragIndex        int
+	offsetX, offsetY float64
 }
 
 func NewGame() *Game {
-	//0 -> default webcam
+	// 0 -> default webcam
 	webCam, err := gocv.OpenVideoCapture(0)
 	if err != nil {
 		return nil
@@ -35,37 +38,77 @@ func NewGame() *Game {
 		gridCols:  3,
 		gridRows:  3,
 		gameState: "live",
+		dragIndex: -1,
+	}
+}
+
+func (g *Game) mouseHandlerDrag() {
+	mX, mY := ebiten.CursorPosition()
+	// Start drag
+	if inpututil.IsMouseButtonJustPressed(ebiten.MouseButtonLeft) {
+		for i := len(g.piceces) - 1; i >= 0; i-- {
+			p := g.piceces[i]
+			if mX >= int(p.X) && mX < int(p.X)+p.Width &&
+				mY >= int(p.Y) && mY < int(p.Y)+p.Height {
+				g.dragIndex = i
+				g.offsetX = float64(mX) - p.X
+				g.offsetY = float64(mY) - p.Y
+				return
+			}
+		}
+	}
+
+	// Dragging — must use IsMouseButtonPressed (held), not JustPressed (first frame only)
+	if g.dragIndex >= 0 && ebiten.IsMouseButtonPressed(ebiten.MouseButtonLeft) {
+		p := g.piceces[g.dragIndex]
+		p.X = float64(mX) - g.offsetX
+		p.Y = float64(mY) - g.offsetY
+	}
+
+	// Release
+	if g.dragIndex >= 0 && inpututil.IsMouseButtonJustReleased(ebiten.MouseButtonLeft) {
+		p := g.piceces[g.dragIndex]
+		dx := p.X - p.TargetX
+		dy := p.Y - p.TargetY
+		if dx*dx+dy*dy < 8000 {
+			p.X = p.TargetX
+			p.Y = p.TargetY
+		}
+		g.dragIndex = -1
 	}
 }
 
 func (g *Game) Update() error {
+	if g.gameState == "live" {
+		g.webCam.Read(g.mat)
+		if !g.mat.Empty() {
+			img, _ := g.mat.ToImage()
+			g.liveImage = ebiten.NewImageFromImage(img)
+		}
+		if inpututil.IsKeyJustPressed(ebiten.KeySpace) {
+			g.capturePuzzle()
+			g.gameState = "puzzle"
+		}
+	} else if g.gameState == "puzzle" {
+		g.mouseHandlerDrag()
+	}
+	if inpututil.IsKeyJustPressed(ebiten.KeyQ) {
+		return ebiten.Termination
+	}
 
-	g.webCam.Read(g.mat)
-	if g.mat.Empty() {
-		return fmt.Errorf("init mat ->%s")
-	}
-	img, err := g.mat.ToImage()
-	if err != nil {
-		return fmt.Errorf("can not get image from g.mat() %s", err)
-	}
-	g.frame = ebiten.NewImageFromImage(img)
-	//take picture
-	if inpututil.IsKeyJustPressed(ebiten.KeySpace) && g.gameState == "live" {
-		g.capturePuzzle()
-		g.gameState = "puzzle"
-	}
 	return nil
 }
+
 func (g *Game) capturePuzzle() {
-	g.puzzleImage = g.frame
+	g.capturedImage = g.liveImage
 	g.piceces = nil
-	pieceW := g.puzzleImage.Bounds().Dx() / g.gridCols
-	pieceH := g.puzzleImage.Bounds().Dy() / g.gridRows
+	pieceW := g.capturedImage.Bounds().Dx() / g.gridCols
+	pieceH := g.capturedImage.Bounds().Dy() / g.gridRows
 	for i := 0; i < g.gridCols*g.gridRows; i++ {
 		col := i % g.gridCols
 		row := i / g.gridCols
 		subRect := image.Rect(col*pieceW, row*pieceH, (col+1)*pieceW, (row+1)*pieceH)
-		subImg := g.puzzleImage.SubImage(subRect).(*ebiten.Image)
+		subImg := g.capturedImage.SubImage(subRect).(*ebiten.Image)
 		piece := &PuzzleImg{
 			Image:   subImg,
 			Width:   pieceW,
@@ -73,33 +116,37 @@ func (g *Game) capturePuzzle() {
 			Index:   i,
 			TargetX: float64(col * pieceW),
 			TargetY: float64(row * pieceH),
-			X:       float64(col*pieceW + rand.Intn(200) - 100), // shuffle a bit
-			Y:       float64(row*pieceH + rand.Intn(200) - 100),
+			X:       float64(col*pieceW + rand.Intn(450) - 100), // shuffle a bit
+			Y:       float64(row*pieceH + rand.Intn(350) - 100 + 380),
 		}
 		g.piceces = append(g.piceces, piece)
 	}
+}
 
-}
 func (g *Game) Layout(outsideWidth, outsideHeight int) (screenWidth, screenHeight int) {
-	return 1280, 720 // Fixed logical resolution
+	return 1280, 920 // Fixed logical resolution
 }
+
 func (g *Game) Draw(screen *ebiten.Image) {
-	if g.frame == nil {
-		screen.Fill(color.Black)
-		fmt.Println("debug......")
-		return
-	}
-	op := &ebiten.DrawImageOptions{}
-	op.GeoM.Scale(0.6, 0.6)
-	screen.DrawImage(g.frame, op)
-	if g.gameState == "live" {
-		ebitenutil.DebugPrint(screen, "Press Space to take picture")
-	} else if g.puzzleImage != nil {
-		for _, p := range g.piceces {
+	screen.Fill(color.RGBA{25, 25, 35, 255})
+
+	if g.gameState == "live" && g.liveImage != nil {
+		op := &ebiten.DrawImageOptions{}
+		op.GeoM.Scale(0.65, 0.65)
+		screen.DrawImage(g.liveImage, op)
+		ebitenutil.DebugPrint(screen, "Space to take image")
+	} else if g.capturedImage != nil {
+		capOp := &ebiten.DrawImageOptions{}
+		capOp.GeoM.Scale(0.5, 0.5)
+		screen.DrawImage(g.capturedImage, capOp)
+		for i, p := range g.piceces {
 			pop := &ebiten.DrawImageOptions{}
-			pop.GeoM.Translate(p.X, p.Y+250)
+			pop.GeoM.Translate(p.X, p.Y)
+			if i == g.dragIndex {
+				pop.ColorScale.Scale(1.25, 1.25, 1.25, 1)
+			}
 			screen.DrawImage(p.Image, pop)
 		}
-		ebitenutil.DebugPrintAt(screen, "Puzzle Mode", 10, 10)
 	}
+	ebitenutil.DebugPrint(screen, "testingg")
 }
