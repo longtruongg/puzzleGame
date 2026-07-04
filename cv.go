@@ -3,6 +3,7 @@ package main
 import (
 	"image"
 	"image/color"
+	"math"
 	"math/rand"
 
 	"github.com/hajimehoshi/ebiten/v2"
@@ -18,11 +19,10 @@ type Game struct {
 	liveImage          *ebiten.Image
 	capturedImage      *ebiten.Image // after image -> pin top left
 	piceces            []*PuzzleImg
-	gameState          string // live, puzzle
+	gameState          string // live, puzzle, done
 	gridCols, gridRows int
-
-	dragIndex        int
-	offsetX, offsetY float64
+	dragIndex          int
+	offsetX, offsetY   float64
 }
 
 func NewGame() *Game {
@@ -58,14 +58,12 @@ func (g *Game) mouseHandlerDrag() {
 		}
 	}
 
-	// Dragging — must use IsMouseButtonPressed (held), not JustPressed (first frame only)
 	if g.dragIndex >= 0 && ebiten.IsMouseButtonPressed(ebiten.MouseButtonLeft) {
 		p := g.piceces[g.dragIndex]
 		p.X = float64(mX) - g.offsetX
 		p.Y = float64(mY) - g.offsetY
 	}
 
-	// Release
 	if g.dragIndex >= 0 && inpututil.IsMouseButtonJustReleased(ebiten.MouseButtonLeft) {
 		p := g.piceces[g.dragIndex]
 		dx := p.X - p.TargetX
@@ -85,12 +83,13 @@ func (g *Game) Update() error {
 			img, _ := g.mat.ToImage()
 			g.liveImage = ebiten.NewImageFromImage(img)
 		}
-		if inpututil.IsKeyJustPressed(ebiten.KeySpace) {
+		if inpututil.IsKeyJustPressed(ebiten.KeySpace) && g.liveImage != nil {
 			g.capturePuzzle()
 			g.gameState = "puzzle"
 		}
 	} else if g.gameState == "puzzle" {
 		g.mouseHandlerDrag()
+		g.checkStatus()
 	}
 	if inpututil.IsKeyJustPressed(ebiten.KeyQ) {
 		return ebiten.Termination
@@ -117,7 +116,7 @@ func (g *Game) capturePuzzle() {
 			TargetX: float64(col * pieceW),
 			TargetY: float64(row * pieceH),
 			X:       float64(col*pieceW + rand.Intn(450) - 100), // shuffle a bit
-			Y:       float64(row*pieceH + rand.Intn(350) - 100 + 380),
+			Y:       float64(row*pieceH + rand.Intn(280) - 100 + 380),
 		}
 		g.piceces = append(g.piceces, piece)
 	}
@@ -132,21 +131,45 @@ func (g *Game) Draw(screen *ebiten.Image) {
 
 	if g.gameState == "live" && g.liveImage != nil {
 		op := &ebiten.DrawImageOptions{}
-		op.GeoM.Scale(0.65, 0.65)
+		op.GeoM.Scale(0.5, 0.5)
 		screen.DrawImage(g.liveImage, op)
-		ebitenutil.DebugPrint(screen, "Space to take image")
+		ebitenutil.DebugPrint(screen, "Space : capture photo |  Q: to quit")
 	} else if g.capturedImage != nil {
 		capOp := &ebiten.DrawImageOptions{}
+
 		capOp.GeoM.Scale(0.5, 0.5)
+
 		screen.DrawImage(g.capturedImage, capOp)
 		for i, p := range g.piceces {
 			pop := &ebiten.DrawImageOptions{}
+			pop.GeoM.Scale(0.5, 0.5)
 			pop.GeoM.Translate(p.X, p.Y)
 			if i == g.dragIndex {
 				pop.ColorScale.Scale(1.25, 1.25, 1.25, 1)
 			}
 			screen.DrawImage(p.Image, pop)
 		}
+		if g.gameState == "done" {
+			ebitenutil.DebugPrintAt(screen, "COMPLETO! 🎉", 480, 120)
+		} else {
+			ebitenutil.DebugPrintAt(screen, "Moving with mouse: Q to Quit", 320, 120)
+		}
 	}
-	ebitenutil.DebugPrint(screen, "testingg")
+}
+
+func sin(x float64) float64 {
+	return float64(math.Sin(x))
+}
+
+func (g *Game) checkStatus() {
+	done := true
+	for _, p := range g.piceces {
+		if p.X != p.TargetX || p.Y != p.TargetY {
+			done = false
+			break
+		}
+	}
+	if done {
+		g.gameState = "done"
+	}
 }
