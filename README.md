@@ -7,3 +7,9 @@ https://www.instagram.com/reel/DZ1YQ4HtCHy
 Debian/Ubuntu:
 
  <code>sudo apt install libc6-dev libgl1-mesa-dev libxcursor-dev libxi-dev libxinerama-dev libxrandr-dev libxxf86vm-dev libasound2-dev pkg-config</code>
+
+Go-tflite from Mattn
+
+Model from Google 
+
+<code>https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task</code>

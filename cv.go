@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"image"
 	"image/color"
 	"math"
@@ -23,9 +24,11 @@ type Game struct {
 	gridCols, gridRows int
 	dragIndex          int
 	offsetX, offsetY   float64
+	handTracker        *HandTracker
+	handCount          int
 }
 
-func NewGame() *Game {
+func NewGame(handTracker *HandTracker) *Game {
 	// 0 -> default webcam
 	webCam, err := gocv.OpenVideoCapture(0)
 	if err != nil {
@@ -33,12 +36,13 @@ func NewGame() *Game {
 	}
 	x := gocv.NewMat()
 	return &Game{
-		webCam:    webCam,
-		mat:       &x,
-		gridCols:  3,
-		gridRows:  3,
-		gameState: "live",
-		dragIndex: -1,
+		webCam:      webCam,
+		mat:         &x,
+		gridCols:    3,
+		gridRows:    3,
+		gameState:   "live",
+		dragIndex:   -1,
+		handTracker: handTracker,
 	}
 }
 
@@ -80,6 +84,9 @@ func (g *Game) Update() error {
 	if g.gameState == "live" {
 		g.webCam.Read(g.mat)
 		if !g.mat.Empty() {
+			if g.handTracker != nil {
+				g.handCount = g.handTracker.Process(g.mat)
+			}
 			img, _ := g.mat.ToImage()
 			g.liveImage = ebiten.NewImageFromImage(img)
 		}
@@ -133,7 +140,7 @@ func (g *Game) Draw(screen *ebiten.Image) {
 		op := &ebiten.DrawImageOptions{}
 		op.GeoM.Scale(0.5, 0.5)
 		screen.DrawImage(g.liveImage, op)
-		ebitenutil.DebugPrint(screen, "Space : capture photo |  Q: to quit")
+		ebitenutil.DebugPrint(screen, fmt.Sprintf("hands: %d | Space: capture | Q: quit", g.handCount))
 	} else if g.capturedImage != nil {
 		capOp := &ebiten.DrawImageOptions{}
 

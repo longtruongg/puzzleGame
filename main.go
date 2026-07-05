@@ -2,8 +2,10 @@ package main
 
 import (
 	"log"
+	"os"
 
 	"github.com/hajimehoshi/ebiten/v2"
+	"github.com/mattn/go-tflite"
 )
 
 // make user part of video group to access webcam
@@ -81,12 +83,40 @@ import (
 //	func (g *Game) Layout(outsideWidth, outsideHeight int) (int, int) {
 //		return g.Width, g.Height
 //	}
+func loadInterpreter(path string) (*tflite.Model, *tflite.Interpreter) {
+	if _, err := os.Stat(path); os.IsNotExist(err) {
+		log.Fatalf("missing model: %s", path)
+	}
+	model := tflite.NewModelFromFile(path)
+	if model == nil {
+		log.Fatalf("cannot load model: %s", path)
+	}
+	opts := tflite.NewInterpreterOptions()
+	opts.SetNumThread(4)
+	interp := tflite.NewInterpreter(model, opts)
+	if interp == nil || interp.AllocateTensors() != tflite.OK {
+		log.Fatalf("cannot init interpreter: %s", path)
+	}
+	return model, interp
+}
+
 func main() {
+	detModel, detInterp := loadInterpreter("hand_landmarker_extracted/hand_detector.tflite")
+	defer detModel.Delete()
+	defer detInterp.Delete()
+
+	lmModel, lmInterp := loadInterpreter("hand_landmarker_extracted/hand_landmarks_detector.tflite")
+	defer lmModel.Delete()
+	defer lmInterp.Delete()
+
+	tracker := NewHandTracker(detInterp, lmInterp)
+
 	ebiten.SetWindowSize(1280, 920)
-	game := NewGame()
+	game := NewGame(tracker)
 	ebiten.SetWindowTitle("Webcam - SPACE to capture -- Q to Close")
 	defer game.webCam.Close()
 	defer game.mat.Close()
+
 	if err := ebiten.RunGame(game); err != nil {
 		log.Fatal(err)
 	}
